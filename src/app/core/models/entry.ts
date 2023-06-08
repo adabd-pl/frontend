@@ -1,6 +1,7 @@
 export interface Entry {
   entry_id: number;
   entry_type_id: number;
+  content: string;
   title: string;
   favorite: boolean;
   categories: {

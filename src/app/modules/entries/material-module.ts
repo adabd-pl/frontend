@@ -5,6 +5,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from "@angular/material/card";
 import { MatTooltipModule } from "@angular/material/tooltip";
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
     declarations: [
@@ -14,6 +16,9 @@ import { MatTooltipModule } from "@angular/material/tooltip";
         MatIconModule,
         MatCardModule,
         MatTooltipModule,
+        MatGridListModule,
+        MatChipsModule,
+        MatListModule
     ]
 })
 export class MaterialModule { }

@@ -1,1 +1,41 @@
-<p>entry-details works!</p>
+<mat-grid-list class="container" layout-align="center center" cols="1" rowHeight="1:1">
+
+
+    <mat-card class="card" *ngIf="entry">
+        <div>
+        <mat-card-header>
+            <mat-card-title>{{entry.title}}</mat-card-title>
+           
+        </mat-card-header>
+        <mat-card-content>
+            <p>{{entry.content}}</p>
+
+        </mat-card-content>
+    </div>
+        <mat-card-footer>
+            <div>
+            <mat-chip-set>
+                <div *ngFor="let chip of entry.categories"  >
+                    <mat-chip  selected class="faculty" *ngIf="chip.type==0"   [ngClass]="!chip.parent_id ? 'f1' : 'f2'" >
+                        {{chip.names[0].name}}
+                    </mat-chip>
+                    
+                </div>
+            </mat-chip-set>
+            <mat-chip-set>
+                <div *ngFor="let chip of entry.categories">
+                    <mat-chip selected class="area"   [ngClass]="!chip.parent_id ? ' a1' : ' a2'"  *ngIf="chip.type==1" >
+                        {{chip.names[0].name}}
+                    </mat-chip>
+                </div>
+            </mat-chip-set>
+           
+            <mat-card-actions >
+                <button mat-raised-button color="primary">Message</button>
+
+            </mat-card-actions>
+        </div>
+        <div class="creator"><div><a href="">{{entry.author.first_name}}</a> {{entry.created_at}}</div></div>
+        </mat-card-footer>
+    </mat-card>
+</mat-grid-list>

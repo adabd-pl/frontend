@@ -12,7 +12,7 @@ export class EntryService {
 
 
   getEntriesByType(type: EntryType): Observable<Entry[]> {
-    const filteredEntries = ENTRIES.filter(entry => entry.entry_type_id === type);
+    const filteredEntries = ENTRIES.filter((entry) => entry.entry_type_id === type);
     return of(filteredEntries);
   }
 }

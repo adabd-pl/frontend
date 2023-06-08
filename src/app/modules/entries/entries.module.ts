@@ -23,3 +23,4 @@ import { EntryDetailsComponent } from './components/entry-details/entry-details.
   ]
 })
 export class EntriesModule { }
+

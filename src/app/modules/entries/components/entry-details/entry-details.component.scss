@@ -1,0 +1,67 @@
+
+@use "@angular/material" as mat;
+@use "src/theme";
+
+
+.card {
+    max-width: 1000px;
+    min-height: 500px;
+  }
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+mat-card{
+	display:flex;
+	flex-direction: column;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding: 16px;
+
+}
+
+mat-card-header {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+mat-card-footer{
+    justify-content:left;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+}
+mat-card-actions{
+    padding: 0;
+   
+}
+.creator{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+
+.a1{
+    background-color: mat.get-color-from-palette(theme.$app-primary, darker) !important;
+}
+.a2{
+    background-color: mat.get-color-from-palette(theme.$app-primary, lighter) !important;
+}
+
+.f1{
+    background-color: mat.get-color-from-palette(theme.$app-accent, darker) !important;
+}
+.f2{
+    background-color: mat.get-color-from-palette(theme.$app-accent, lighter) !important;
+}
+
+a{
+    color:blue($color: #000000)
+}
