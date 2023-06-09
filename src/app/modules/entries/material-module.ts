@@ -11,6 +11,7 @@ import {MatInputModule} from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatPseudoCheckbox, MatPseudoCheckboxModule } from '@angular/material/core';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatGridListModule} from '@angular/material/grid-list';
 @NgModule({
     declarations: [
     ],
@@ -19,13 +20,13 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
         MatIconModule,
         MatCardModule,
         MatTooltipModule,
-        MatGridListModule,
         MatChipsModule,
         MatListModule,
         MatFormFieldModule,
         MatInputModule,
         MatSelectModule,
-        MatCheckboxModule
+        MatCheckboxModule,
+        MatGridListModule
     ]
 })
 export class MaterialModule { }
